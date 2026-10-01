@@ -1,0 +1,26 @@
+# Nmap 7.99 scan initiated Thu Oct  1 11:11:51 2026 as: /usr/lib/nmap/nmap -sV -p 135,445,5432,9080 -oN /home/kali/service-detection-10.0.2.2.txt 10.0.2.2
+Nmap scan report for 10.0.2.2 (10.0.2.2)
+Host is up (0.00072s latency).
+
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+445/tcp  open  microsoft-ds?
+5432/tcp open  postgresql    PostgreSQL DB
+9080/tcp open  glrpc?
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port9080-TCP:V=7.99%I=7%D=10/1%Time=6ABE783D%P=x86_64-pc-linux-gnu%r(Ge
+SF:tRequest,47,"HTTP/1\.1\x20301\x20Moved\x20Permanently\nLocation:\x20abo
+SF:ut:blank\nConnection:\x20close\n")%r(GenericLines,47,"HTTP/1\.1\x20301\
+SF:x20Moved\x20Permanently\nLocation:\x20about:blank\nConnection:\x20close
+SF:\n")%r(HTTPOptions,47,"HTTP/1\.1\x20301\x20Moved\x20Permanently\nLocati
+SF:on:\x20about:blank\nConnection:\x20close\n")%r(RTSPRequest,47,"HTTP/1\.
+SF:1\x20301\x20Moved\x20Permanently\nLocation:\x20about:blank\nConnection:
+SF:\x20close\n")%r(FourOhFourRequest,47,"HTTP/1\.1\x20301\x20Moved\x20Perm
+SF:anently\nLocation:\x20about:blank\nConnection:\x20close\n")%r(SIPOption
+SF:s,47,"HTTP/1\.1\x20301\x20Moved\x20Permanently\nLocation:\x20about:blan
+SF:k\nConnection:\x20close\n");
+MAC Address: 52:55:0A:00:02:02 (Unknown)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Oct  1 11:13:57 2026 -- 1 IP address (1 host up) scanned in 126.44 seconds
